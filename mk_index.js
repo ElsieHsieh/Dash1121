@@ -37,7 +37,7 @@
 
     
 
-      var csv = d3.dsv(",", "text/csv;charset=big5");
+      var csv = d3.csv(",", "text/csv;charset=big5");
       csv("https://elsiehsieh.github.io/Dash1114/nfa2.csv", function(data) {
 
         var timeformat = d3.time.format("%Y/%m/%e %H:%M").parse;
