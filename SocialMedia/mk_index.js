@@ -34,7 +34,12 @@
       });
     });
  
+    $(document).ready(function() {
+          draw()
+        });
+      
 
+        function draw() {
 
       var csv = d3.csv(",", "text/csv;charset=big5");
       csv("https://elsiehsieh.github.io/Dash1121/SocialMedia/typhoondata.csv", function(data) {
@@ -226,3 +231,4 @@
 
         dc.renderAll();
       });
+}
